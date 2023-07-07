@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());  
-app.use(express.static("build"));  
+app.use(express.static("build"));  // Server static client at "/". 
 
 // Get a user's tracked items.
 app.get("/users/:membershipId", (request, response) => {
