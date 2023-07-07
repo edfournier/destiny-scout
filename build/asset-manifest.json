@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65061f40.css",
+    "main.js": "/static/js/main.14a3d258.js",
+    "static/media/cayde.png": "/static/media/cayde.c39e02f1e22258bb8b5a.png",
+    "index.html": "/index.html",
+    "main.65061f40.css.map": "/static/css/main.65061f40.css.map",
+    "main.14a3d258.js.map": "/static/js/main.14a3d258.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65061f40.css",
+    "static/js/main.14a3d258.js"
+  ]
+}
