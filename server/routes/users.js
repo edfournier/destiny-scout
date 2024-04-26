@@ -24,7 +24,7 @@ router.get("/:membershipId", async (request, response, next) => {
     }
 });
 
-// TODO: Need to validate itemHash. 
+// TODO: Need to validate itemHash
 router.post("/:membershipId", async (request, response, next) => {
     try {
         if (!request.headers.authorization || !request.body.itemHash) {
@@ -36,7 +36,7 @@ router.post("/:membershipId", async (request, response, next) => {
             return response.status(401).json({ error: "User not authorized." });
         }
 
-        // Save itemHash to user's document in database. 
+        // Save itemHash to user's document in database
         let user = await User.findById(request.params.membershipId);
         if (!user) {
             user = new User({

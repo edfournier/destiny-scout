@@ -1,0 +1,128 @@
+body {
+    background-color: #121212;
+    font-family: "Lexend Deca";
+    color: white;
+    margin: 0px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+input {
+    font: inherit;
+}
+
+button {
+    font: inherit;
+}
+
+.tile {
+    border-radius: 4px;
+    background-color: #212121;
+}
+
+.home-view {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button {
+    border-radius: 5px;
+    margin: 0;
+    border: 0;
+    padding: 10px;
+}
+
+.login-button:hover {
+    cursor: pointer;
+}
+
+/* Login page styles. */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+}
+
+.cayde {
+    height: 1000px;
+    width: auto;
+    padding: 20px;
+    padding-top: 0;
+}
+
+/* Search form styles. */
+.search-form {
+    margin-top: 8px;
+}
+
+.search-box {
+    width: 296px;
+}
+
+.search-container {
+    position: absolute;     /* To overlay results. */
+    padding: 2px;
+    margin-top: 4px;
+    width: 300px;
+}
+
+.search-container:empty {
+    display: none;
+}
+
+.search-result {
+    position: relative;     /* To overlay results. */
+    padding: 2px;
+    border-bottom: 1px solid #121212;
+} 
+
+.search-result:hover {
+    cursor: pointer;
+}
+
+/* Inventory styles. */
+.inventories {
+    margin-left: 8px;
+    width: fit-content;
+}
+
+.inventory-container {
+    display: block;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.item-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 4px;
+}
+
+.inventory-label {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.small-item-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+
+/* Navigation bar styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #212121;
+}

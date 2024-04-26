@@ -1,0 +1,8 @@
+{
+  "short_name": "D2 Scout",
+  "name": "Destiny Scout",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

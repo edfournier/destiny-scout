@@ -4,23 +4,22 @@ import cors from "cors";
 import mongoose from "mongoose";
 import users from "./routes/users.js";
 
-// TODO: Make a Error class. Use next to throw errors in routes.
 function errorHandler(error, request, response, next) {
     console.log(error);
     return response.sendStatus(error.status || 500);
 }
 
-// Connect to MongoDB. 
+// Connect to MongoDB
 mongoose.connect(process.env.DB_URI);
 mongoose.set('strictQuery', false);
 
 const app = express();
 
-app.use(express.json());            // Parse requests as JSON. 
-app.use(cors());                    // Access resources from remote hosts. 
-app.use(express.static("build"));   // Serve static client at '/'. 
-app.use("/users", users);           // Set up CRUD routes at '/users' defined in the 'routes' folder.
-app.use(errorHandler);              // Catch all errors. 
+app.use(express.json());            // Parse requests as JSON
+app.use(cors());                    // Access resources from remote hosts
+app.use(express.static("build"));   // Serve static client at '/'
+app.use("/users", users);           // Set up CRUD routes at '/users' defined in the 'routes' folder
+app.use(errorHandler);              // Catch all errors
 
 app.post("/echo", (res, rep) => {
     console.log("HIT!");
