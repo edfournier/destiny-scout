@@ -58,7 +58,7 @@ export function Landing() {
             const itemDefinitions = await db.getItems();
             const inventories = await Promise.all([
                 getVendorInventories(auth.user, itemDefinitions), 
-                getTrackedItems(auth.user, itemDefinitions),
+                // getTrackedItems(auth.user, itemDefinitions),
             ]);
 
             console.log(inventories);

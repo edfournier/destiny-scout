@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-    const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));   // Null if no user.
+    const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));   // Null if no user
     const navigate = useNavigate();
 
     function logout() {
-        // Nuke caches and send to login screen.
+        // Nuke caches and send to login screen
         setUser(null);
         sessionStorage.clear();
         return navigate("/");

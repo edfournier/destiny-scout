@@ -7,7 +7,7 @@ npm run start
 ```
 
 # Environment
-The client expects a top-level file `.env` at with the following variables:
+The client expects a top-level file `.env` with the following variables:
 ```bash
 REACT_APP_CLIENT_ID=<your client id>
 REACT_APP_API_KEY=<your API key>
